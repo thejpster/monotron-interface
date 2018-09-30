@@ -1,5 +1,5 @@
 [package]
-name = "montron-interface"
+name = "monotron-interface"
 version = "0.1.0"
 authors = ["Jonathan 'theJPster' Pallant <github@thejpster.org.uk>"]
 
