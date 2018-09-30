@@ -25,7 +25,7 @@
 //! * ReadDir(filename: String, size: u32, mtime: Timestamp, type: Type)
 //! Indications:
 //! * Keypress(utf8_byte: u8)
-// #![no_std]
+#![no_std]
 
 extern crate crc;
 
@@ -74,11 +74,6 @@ impl CommandWriter {
         self.sent = 0;
         // See https://crccalc.com/, marked CRC-16/X25
         self.crc = crc::crc16::checksum_x25(&self.bytes[0..self.count]);
-        println!(
-            "Checksumming {:?} = {:04x}",
-            &self.bytes[0..self.count],
-            self.crc
-        );
     }
 
     pub fn send_ping_req(&mut self) {

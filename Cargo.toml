@@ -3,5 +3,8 @@ name = "monotron-interface"
 version = "0.1.0"
 authors = ["Jonathan 'theJPster' Pallant <github@thejpster.org.uk>"]
 
-[dependencies]
-crc = "^1.0.0"
+[dependencies.crc]
+version = "^1.0.0"
+default-features = false
+
+
